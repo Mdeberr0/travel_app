@@ -10,23 +10,41 @@
       </ul>
     </div>
   <% end %>
-
-  <div class="field">
-    <%= f.label :city %>
-    <%= f.text_field :city %>
+ 	
+ 	<div class="field form-group">
+    <%= f.label :address %><br>
+    <%= f.text_field :adddress, class: "form-control" %>
+  </div>
+  <div class="field form-group">
+    <%= f.label :city %><br>
+    <%= f.text_field :city, class: "form-control" %>
+  </div>
+  <div class="field form-group">
+    <%= f.label :country %><br>
+    <%= f.text_field :country, class: "form-control" %>
+  </div>
+   <div class="field form-group">
+    <%= f.label :latitude %><br>
+    <%= f.text_field :latitude, class: "form-control" %>
+  </div> 
+  <div class="field form-group">
+    <%= f.label :longitude %><br>
+    <%= f.text_field :longitude, class: "form-control" %>
+  </div>
+  <div class="field form-group">
+    <%= f.label :population %><br>
+    <%= f.number_field :population, class: "form-control" %>
+  </div>
+  <div class="field form-group">
+    <%= f.label :description %><br>
+    <%= f.text_area :description, class: "form-control", rows: "5" %>
+  </div>
+  <div class="field form-group">
+    <%= f.label "Photo" %><br>
+    <%= f.file_field :avatar %>
+  </div>
+  <div class="actions form-group">
+    <%= f.submit class: "btn btn-primary" %>
   </div>
 
-  <div class="field">
-    <%= f.label :country %>
-    <%= f.text_field :country %>
-  </div>
-
-  <div class="field">
-    <%= f.label :description %>
-    <%= f.text_area :description %>
-  </div>
-
-  <div class="actions">
-    <%= f.submit %>
-  </div>
 <% end %>

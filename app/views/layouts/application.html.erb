@@ -9,12 +9,13 @@
   
     <%= csrf_meta_tags %>
 		<%= stylesheet_link_tag "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" %>
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+		<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" %>
   </head>
 
   <body>
+  	<%= javascript_include_tag"https://maps.googleapis.com/maps/api/js?key=AIzaSyBpECpbA1LHDjUsJjDCrxDjq9c-9pRdikM" %>
   	<nav class="navbar navbar-default">
   		<div class="container-fluid">
 		    <!-- Brand and toggle get grouped for better mobile display -->
@@ -78,5 +79,6 @@
   	<div class='container'>
     	<%= yield %>
     </div>
+
   </body>
 </html>

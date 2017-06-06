@@ -7,10 +7,13 @@
 		<li><%= country %></li>
 	<% end %>
 </ul>
+
 <% @picsofchile.each do |picture| %>
 		<%= image_tag picture, class: "img-responsive", alt: "Atacama",
                           id: "chile",
                           class: "country",
                           height: 300,
                           width: 400 %>
-	<% end %>
+<% end %>
+
+<div id="map-canvas"></div>
